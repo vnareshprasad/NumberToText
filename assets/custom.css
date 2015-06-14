@@ -1,0 +1,8 @@
+@font-face {
+font-family: tamilnt;
+src: url("test/tamilnt.ttf");
+}
+ 
+#change{
+font-family: tamilnt;
+}
