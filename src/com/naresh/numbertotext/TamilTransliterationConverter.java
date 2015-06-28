@@ -274,6 +274,10 @@ public class TamilTransliterationConverter extends NumberToWordConverter{
                     .concat(processor.getName(decimalValue))
                     .concat(SEPARATOR).concat(SCALE.getName(-decimalValue.length()));
             }
+            if(!name.isEmpty()){
+            	char f = name.charAt(0);
+            	name = Character.toUpperCase(f) + name.substring(1, name.length());
+            }
             return name;
         }
     }

@@ -1,44 +1,97 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_light"
     tools:context=".MainActivity" >
 
-    <com.inmobi.monetization.IMBanner
-        android:id="@+id/banner"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        adSize="15"
-        appId="c04b32fbd7df4485ae62c558b3314108" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/textviewEnterNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/banner"
-        android:text="@string/enternumber" />
+        <TextView
+            android:id="@+id/textviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/textview_text_padding"
+            android:text="@string/app_name"
+            android:textColor="@color/light_font"
+            android:textStyle="bold"
+             android:shadowColor="@color/text_shadow"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+            android:textSize="@dimen/text_output_size" />
 
-    <EditText
-        android:id="@+id/etNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/textviewEnterNumber"
-        android:inputType="number"
-        android:maxLength="19" >
+        <TextView
+            android:id="@+id/textviewEnterNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewTitle"
+            android:padding="@dimen/textview_text_padding"
+            android:text="@string/enternumber"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_input_size" />
 
-        <requestFocus />
-    </EditText>
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textviewEnterNumber"
+            android:layout_margin="@dimen/view_margin_small"
+            android:background="@drawable/roundcorner"
+            android:inputType="number"
+            android:maxLength="19"
+            android:paddingLeft="@dimen/textview_text_padding"
+            android:paddingRight="@dimen/textview_text_padding"
+            android:textSize="@dimen/text_output_size" >
 
-    <TextView
-        android:id="@+id/textviewOutputWords"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etNumber" />
+            <requestFocus />
+        </EditText>
 
-</RelativeLayout>
+        <com.inmobi.monetization.IMBanner
+            android:id="@+id/banner"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etNumber"      
+            android:layout_centerHorizontal="true"      
+            adSize="15"
+            appId="c04b32fbd7df4485ae62c558b3314108" />
+
+        <TextView
+            android:id="@+id/tvEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:layout_margin="@dimen/view_margin_small"
+            android:background="@drawable/tvroundcornergreen"
+            android:padding="@dimen/textview_text_padding"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_output_size" />
+
+        <TextView
+            android:id="@+id/tvTanglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnglish"
+            android:layout_margin="@dimen/view_margin_small"
+            android:background="@drawable/tvroundcornerorange"
+            android:padding="@dimen/textview_text_padding"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_output_size" />
+
+        <TextView
+            android:id="@+id/tvTamil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTanglish"
+            android:layout_margin="@dimen/view_margin_small"
+            android:background="@drawable/tvroundcorneryellow"
+            android:padding="@dimen/textview_text_padding"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_output_size_tamil" />
+    </RelativeLayout>
+
+</ScrollView>

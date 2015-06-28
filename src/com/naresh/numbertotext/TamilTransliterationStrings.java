@@ -16,36 +16,36 @@ public class TamilTransliterationStrings {
 	};
 
 	public final String[] NUM_NAMES= {
-		" onru",
-		" irandu",
-		" moonru",
-		" nangu",
-		" ayinthu",
-		" aaru",
-		" yezhu",
-		" yeattu",
-		" onbathu",
-		" patthu",
-		" pathinonru",
-		" panirendu",
-		" pathimondru",
-		" pathinangu",
-		" pathinaindu",
-		" pathinaaru",
-		" pathinezhu",
-		" pathinettu",
-		" pathonbathu"
+		"onru",
+		"irandu",
+		"moonru",
+		"nangu",
+		"ayinthu",
+		"aaru",
+		"yezhu",
+		"yeattu",
+		"onbathu",
+		"patthu",
+		"pathinonru",
+		"panirendu",
+		"pathimondru",
+		"pathinangu",
+		"pathinaindu",
+		"pathinaaru",
+		"pathinezhu",
+		"pathinettu",
+		"pathonbathu"
 	};
 
 	public final String[] TENS_NAMES = {
-		" irubathu",
-		" moobathu",
-		" narbathu",
-		" aiymbathu",
-		" arubathu",
-		" yezhubathu",
-		" yenbathu",
-		" thonnuru"
+		"irubathu",
+		"moobathu",
+		"narbathu",
+		"aiymbathu",
+		"arubathu",
+		"yezhubathu",
+		"yenbathu",
+		"thonnuru"
 	};
 
 	public final String[] HUNDRED_NAMES = {
