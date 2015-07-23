@@ -47,8 +47,6 @@
             android:paddingLeft="@dimen/textview_text_padding"
             android:paddingRight="@dimen/textview_text_padding"
             android:textSize="@dimen/text_output_size" >
-
-            <requestFocus />
         </EditText>
 
         <com.inmobi.monetization.IMBanner

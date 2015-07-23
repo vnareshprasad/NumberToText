@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
 		inputNumber.setText(DEFAULT_STRING);
 		updateForValue(DEFAULT_STRING);
 		banner.loadBanner();
-
+		inputNumber.requestFocus();
 		inputNumber.addTextChangedListener(new TextWatcher() {
 
 			@Override
